@@ -1,3 +1,4 @@
+//Ananymous Funtion
 let data = ["gawas","appa","uncle","amma"]; 
 const out = function(dataVal) {
       
@@ -30,3 +31,37 @@ const out = function(dataVal) {
 }
 }
 out(data );
+
+
+
+
+
+//IIFE Function
+
+
+let data = ["gawas","appa","uncle","amma"]; 
+(function(dataVal){
+      
+       let palin=[];
+    for(let j=0;j<dataVal.length;j++)
+{
+          const arrval= dataVal[j].toString().split('');
+		const reverseval = arrval.reverse();
+
+		const output = reverseval.join('');
+
+          
+           
+            if (dataVal[j] == output){
+                console.log(dataVal[j] + " is palindrome");
+                palin.push(dataVal[j]);
+            }
+            else
+            {
+                console.log(dataVal[j] + " is not palindrome");
+               
+            }
+       
+        console.log(palin);
+}
+})(data );
