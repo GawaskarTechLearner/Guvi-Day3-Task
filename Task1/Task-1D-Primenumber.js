@@ -33,7 +33,7 @@ const out=function (dataVal) {
 //IIFE Function Prime number
 
 let data = [17,78,34,7, 32,23,15,43]; 
-((dataVal) => {
+(function(dataVal) {
        let flag = true;
        let primeNum =[];
     for(let j=0;j<dataVal.length;j++)
